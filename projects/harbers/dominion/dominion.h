@@ -146,4 +146,3 @@ int Great_Hall(int currentPlayer, struct gameState *state, int handPos);
 
 
 #endif
-

@@ -33,8 +33,7 @@ int main(int argc, char** argv)
 	{
 		printf("Card %d: %d\n", i, thisGame.deck[0][i]);
 	}
-
-
+	
 	printf("Test 1: Score at Beginning of the Game is 3\n");
 		// Score for Player 1 Should be 3
 			assertScore(scoreFor(0, &thisGame), 3);

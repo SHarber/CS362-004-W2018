@@ -24,7 +24,7 @@ testAll: dominion.o testSuite.c
 interface.o: interface.h interface.c
 	gcc -c interface.c -g  $(CFLAGS)
 
-runtests: testDrawCard 
+runtests: testDrawCard
 	./testDrawCard &> unittestresult.out
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
@@ -57,6 +57,33 @@ ctest3:
 ctest4:
 	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c cardtest4.c rngs.c -o cardtest4 -lm -g
 
+rtest1:
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestadventurer.c rngs.c -o rtest1 -lm -g
+
+rtest2:
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard1.c rngs.c -o rtest2 -lm -g
+
+rtest3:
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.c randomtestcard2.c rngs.c -o rtest3 -lm -g
+
+randomtest1: rtest1
+	./rtest1 >> randomtestadventurer.out
+	gcov dominion.c >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+
+randomtest2: rtest2
+	./rtest2 >> randomtestcard1.out
+	gcov dominion.c >> randomtestcard1.out
+	cat dominion.c.gcov >> randomtestcard1.out
+
+randomtest3: rtest3
+	./rtest3 >> randomtestcard2.out
+	gcov dominion.c >> randomtestcard2.out
+	cat dominion.c.gcov >> randomtestcard2.out
+
+
+allrandomtests: rtest1 randomtest1 rtest2 randomtest2 rtest3 randomtest3
+
 allunittests: utest1 utest2 utest3 utest4 ctest1 ctest2 ctest3 ctest4
 	./unittest1 >> unittestresult.out
 	./unittest2 >> unittestresult.out
@@ -69,7 +96,7 @@ allunittests: utest1 utest2 utest3 utest4 ctest1 ctest2 ctest3 ctest4
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
-clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+all: playdom player testDrawCard testBuyCard badTestDrawCard ctest1 ctest2 ctest3 ctest4 rtest1 randomtest1 rtest2 randomtest2 rtest3 randomtest3 utest1 utest2 utest3 utest4 
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard ctest1 ctest2 ctest3 ctest4 utest1 utest2 utest3 utest4 allunittests
+clean:
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe cardtest1 cardtest2 cardtest3 cardtest4 unittest2 unittest3 unittest4 TestDrawCard unittest1 rtest1 rtest2 badTestDrawCard rtest3
