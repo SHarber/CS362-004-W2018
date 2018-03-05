@@ -1,0 +1,154 @@
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Current Score: 3
+*******************************************************************
+                      scoreFor Unit Test                         
+*******************************************************************
+
+Print Player 1's Initial Deck to Confirm Score Should be 3
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 1: Score at Beginning of the Game is 3
+TEST PASSED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 2: Curse Added to Player's Deck Decreases Score by 1
+TEST FAILED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 3: Adding an Estate Increases Score By 1
+TEST PASSED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 4: Adding A Duchy Increases Score By 3
+TEST FAILED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 5: Adding a Province Increases Score by 6
+TEST FAILED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 6: A Garden Card adds A Victory Point For Every 10 Cards In Player's Deck
+TEST FAILED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 7: Great Hall Adds 1 Point To Score
+TEST FAILED
+Deck Count: 5 
+Card 0: 1
+Card 1: 4
+Card 2: 4
+Card 3: 4
+Card 4: 4
+Discard Count: 0 
+Hand Count: 5 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Test 8: Player Draws 5 Cards From Hand, Score is Unchanged
+TEST FAILED
+Deck Count: 0 
+Discard Count: 0 
+Hand Count: 10 
+Hand Card: 0: 1
+Hand Card: 1: 1
+Hand Card: 2: 1
+Hand Card: 3: 4
+Hand Card: 4: 4
+Hand Card: 5: 4
+Hand Card: 6: 4
+Hand Card: 7: 4
+Hand Card: 8: 4
+Hand Card: 9: 1
+Test 9: All Player's Cards moved to Discard Pile, Score is the Same
+TEST FAILED
