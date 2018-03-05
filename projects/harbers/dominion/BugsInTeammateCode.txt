@@ -1,0 +1,107 @@
+----------------------------------------------------------------------------------------------------------------
+BUG REPORT 1
+----------------------------------------------------------------------------------------------------------------
+
+Title: Incorrect Score Reported
+
+Class: Serious Bug
+
+Date:  3/4/18         
+Reported By:   Sarah Harber
+Email: Harbers@oregonstate.edu     
+
+
+Product:  wortheytDominion      Version: Assignment2
+Platform:  Flip		        Version: Current
+
+
+Is it reproducible: Yes
+
+Description
+===========
+Game does not return the correct score.
+
+
+Steps to Produce/Reproduce
+--------------------------
+Error can be reproduced directly after initalization of some games as long as any point cards are still in the deck.
+Seed Used: 66
+
+
+Expected Results
+----------------
+Score for any player at the beginning of the game should be 3.
+
+
+Actual Results
+--------------
+Current Score is 2.  
+
+
+Workarounds
+-----------./u
+Move all cards to the player's hand.
+
+
+Attachments
+-----------
+See Unittest2 output.
+
+
+Other Information
+-----------------
+N/A.  
+
+----------------------------------------------------------------------------------------------------------------
+BUG REPORT 2
+----------------------------------------------------------------------------------------------------------------
+
+Title: Playing Adventurer Card does not decrease number of actions.
+
+Class: Serious Bug
+
+Date:  3/4/18         
+Reported By:   Sarah Harber
+Email: Harbers@oregonstate.edu     
+
+
+Product:  wortheytDominion      Version: Assignment2
+Platform:  Flip		        Version: Current
+
+
+Is it reproducible: Yes 
+
+Description
+===========
+After playing the Adventurer card, the number of actions do not decrease, allowing for an 
+additional action than should be allowed according to game play.
+
+
+Steps to Produce/Reproduce
+--------------------------
+Can be Reproduced Anytime the Adventurer card can be played
+
+
+Expected Results
+----------------
+After play, actions should be 0.
+
+
+Actual Results
+--------------
+Number of actions stays at 1.
+
+
+Workarounds
+-----------./u
+none.
+
+
+Attachments
+-----------
+See randomtestaadventurer print statements after run.
+
+
+Other Information
+-----------------
+N/A
